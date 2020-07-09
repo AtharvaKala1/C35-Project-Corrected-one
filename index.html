@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCtFfgPhpWv9eDRaWo76js4SOuDXduxKkg",
+        authDomain: "c-35-project.firebaseapp.com",
+        databaseURL: "https://c-35-project.firebaseio.com",
+        projectId: "c-35-project",
+        storageBucket: "c-35-project.appspot.com",
+        messagingSenderId: "109611830812",
+        appId: "1:109611830812:web:382e1d7a5a806aec4259d9"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Survey Page</title>
+  </head>
+  <body>
+      
+      <header>
+        <h1>Survey</h1>
+        <p>Tell us About Your Thoughts.</p>
+      </header>
+
+      <div class="survey">
+        <div class="q1">
+          <h3> Do you think we need to have free lunch meals in our school canteen for the
+            kids who are very poor?</h3>
+            <ul class="option1">
+              <li>Yes</li>
+              <li>No</li>
+            </ul>
+        </div>
+
+        <div class="q2">
+          <h3> Would you be willing to contribute a small amount every month for such a
+            program?</h3>
+            <ul class="option2">
+              <li>Yes</li>
+              <li>No</li>
+            </ul>
+        </div>
+
+        <div class="q3">
+          <h3>How much per month would you be willing to pay?</h3>
+            <ul class="option3">
+              <li>100</li>
+              <li>500</li>
+              <li>1000</li>
+              <li>More</li>
+            </ul>
+        </div>
+
+      </div>
+
+      <div class="end">
+        <h1>Thank You</h1>
+        <p>Thanks for your Feedback</p>
+        <a href="index.html">Home</a>
+      </div>
+
+      <script src="sketch.js"></script>
+      <script src="form.js"></script>
+
+
+  </body>
+
+</html>
+    
